@@ -1,0 +1,17 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to websocket example
+  </h1>
+</div>
+
+
+<div style="padding-bottom: 20px">
+  <input  id="input" type="text" #input>
+  <button (click)="sendMessage(input.value)">Send</button>
+</div>
+
+<div style="overflow-y: scroll; height:700px;">
+  <div style="padding-bottom: 5px" *ngFor="let message of messages">{{ message }}</div>
+</div>
+
+
